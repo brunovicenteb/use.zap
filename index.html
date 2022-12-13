@@ -811,7 +811,7 @@
       e.preventDefault();
       var href = this.href;
       try {
-        fbq('track', 'Contact');
+        fbq('track', 'Purchase', {currency: "BRL", value: 59.90});
       }
       finally {
         location.href = href;
